@@ -49,10 +49,8 @@ def get_letter_grade(score):
 def get_class_average(students):
     results = []
     for student in students:
-        x = get_average(student)
-        print ('%s \' average is %d') %(student['name'], x)
-        results.append(x)
-        answer = get_letter_grade(x)
-        print answer
+        print ('%s \' average is %d') %(student['name'], get_average(student))
+        results.append(get_average(student))
+    print average(results)
 
 get_class_average(stds)

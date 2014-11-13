@@ -41,7 +41,7 @@ for turn in range(10):
             elif board[guess_row][guess_col] == 'X':
                 print ('You guessed that one already.')
             else:
-                board[guess_row-1][guess_col-1] = 'X'
+                board[guess_row][guess_col] = 'X'
                 print_board(board)
                 print ('You missed my battleship!')
         turn = turn + 1
